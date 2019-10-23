@@ -7,7 +7,7 @@ namespace FinalProject.BaseFiles
     public class IReader
     {
         IWheel GetWheel { get; }
-        BikeColor ColorType { get; }
+        DeviceColor ColorType { get; }
 
         decimal Price { get; }
         void Color(DeviceColor color);
