@@ -4,13 +4,13 @@ using System.Text;
 
 namespace FinalProject.BaseFiles
 {
-    public class IReader
+    public interface IReader
     {
-        IWheel GetWheel { get; }
-        DeviceColor ColorType { get; }
+        IReader GetReader { get; } 
+        ReaderColor ColorType { get; }
 
         decimal Price { get; }
-        void Color(DeviceColor color);
+        void Color(ReaderColor color);
 
         void CleanFrame();
         void CleanScreen();
