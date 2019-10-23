@@ -1,11 +1,12 @@
-﻿using FinalProject.DeviceBase;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace FinalProject.DeviceFacade
 {
-    public class DeviceDocumentation
+    class ReaderDocumentation
     {
-        public static void PrintBrochure(IDevice device)
+        public static void PrintBrochure(IReader reader)
         {
             Console.WriteLine("Printing Brochure...");
         } // end method print brochure
