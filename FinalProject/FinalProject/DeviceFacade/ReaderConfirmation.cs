@@ -38,5 +38,21 @@ namespace FinalProject.DeviceFacade
             }
             ReaderType();
         } // end method add type
+
+        private bool ValidateType(string readerType)
+        {
+           switch (type.ToLower()
+                {
+                case "0":
+                case "1":
+                case "2":
+                case "3":
+                case "4":
+                case "5":
+                    return true;
+                default:
+                    return false;
+                 } // end switch
+        } // end method bool
     } // end class
-} // end namespace
+} // end namespace 
