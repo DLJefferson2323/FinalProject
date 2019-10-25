@@ -41,7 +41,7 @@ namespace FinalProject.DeviceFacade
 
         private bool ValidateType(string readerType)
         {
-           switch (type.ToLower()
+           switch (readerType.ToLower()
                 {
                 case "0":
                 case "1":
