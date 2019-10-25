@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FinalProject.AbstractFiles
+namespace FinalProject.BaseFiles
 {
-    public interface IReaderFrame
+    public enum ReaderSize
     {
-        string ReaderFramePart { get; }
+        EInk7, EInk9, EInk12, OLED7, OLED9, OLED12
+
     } // end class
 } // end namespace

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using FinalProject.BaseFiles;
 
 namespace FinalProject.DeviceFacade
 {
@@ -10,5 +11,6 @@ namespace FinalProject.DeviceFacade
         {
             Console.WriteLine("Printing Brochure...");
         } // end method print brochure
-    } // end class
+
+     } // end class
 } // end namespace

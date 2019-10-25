@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.BaseFiles;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using static FinalProject.DeviceFacade.ReaderRegistration;
@@ -7,10 +8,12 @@ namespace FinalProject.DeviceFacade
 {
     public class ReaderSale
     {
+        public ReaderRegistration  Register { get; private set; }
+
         public void PrepareForSale(IReader reader)
         {
-            ReaderRegistration reg = new Registration(reader);
-            reg.AllocateReaderNumber();
+            Register = new ReaderRegistration(reader);
+            //AllocateEReaderNumber();
 
             ReaderDocumentation.PrintBrochure(reader);
 
