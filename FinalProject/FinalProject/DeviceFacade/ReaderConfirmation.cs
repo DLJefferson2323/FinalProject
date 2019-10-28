@@ -29,7 +29,7 @@ namespace FinalProject.DeviceFacade
 
             if(ValidateType(_ReaderType))
             {
-                AddReaderType();
+                
             }
             else
             {
@@ -41,7 +41,7 @@ namespace FinalProject.DeviceFacade
 
         private bool ValidateType(string readerType)
         {
-           switch (readerType.ToLower()
+           switch (readerType.ToLower())
                 {
                 case "0":
                 case "1":
