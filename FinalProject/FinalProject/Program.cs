@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FinalProject.AbstractFiles;
+using FinalProject.DeviceFacade;
+using System;
 using System.Collections.Generic;
 
 namespace FinalProject
@@ -12,5 +14,19 @@ namespace FinalProject
             //SingletonDeviceDemo();
             //DeviceFacadeDemo();
         }
+
+        public void myOtherList()
+        {
+            List<MyReaderList> myReadList = new List<MyReaderList>();
+            myReadList.Add(new SevenInch());
+            myReadList.Add(new NineInch());
+            myReadList.Add(new TwelveInch());
+
+            foreach (MyReaderList item in myReadList)
+            {
+                Console.WriteLine(item.ReaderSize + " , " + ReaderColor);
+            } // end method for each
+
+        } // end method my other list
     } // end class
 } // end namespace

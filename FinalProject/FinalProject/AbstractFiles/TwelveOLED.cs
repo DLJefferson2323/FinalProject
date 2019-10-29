@@ -3,7 +3,7 @@
 
 namespace FinalProject.AbstractFiles
 {
-    public abstract class TwelveOLED : AbstractReaderBase
+    public class TwelveOLED : AbstractReaderBase
     {
         public override decimal Price { get; } = 150.00m;
 
