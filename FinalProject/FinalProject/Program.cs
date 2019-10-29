@@ -9,24 +9,31 @@ namespace FinalProject
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World! My name is Argos and I am here to assist you.");
-            //AbstractReaderDemo();
-            //SingletonDeviceDemo();
-            //DeviceFacadeDemo();
+            MyOtherList();
         }
 
-        public void myOtherList()
+        public static void MyOtherList()
         {
-            List<MyReaderList> myReadList = new List<MyReaderList>();
+            List<AbstractReaderBase> myReadList = new List<AbstractReaderBase>();
             myReadList.Add(new SevenInch());
             myReadList.Add(new NineInch());
             myReadList.Add(new TwelveInch());
 
-            foreach (MyReaderList item in myReadList)
-            {
-                Console.WriteLine(item.ReaderSize + " , " + ReaderColor);
-            } // end method for each
+            Manifest myManifest = new Manifest(myReadList);
 
         } // end method my other list
+        public void MySecondList()
+        {
+            List<AbstractReaderBase> myReadList = new List<AbstractReaderBase>();
+            myReadList.Add(new SevenOLED());
+            myReadList.Add(new NineOLED());
+            myReadList.Add(new TwelveOLED());
+
+            foreach (AbstractReaderBase item in myReadList)
+            {
+                Console.WriteLine(item.AndroidOS, item.Charger, item.GPS, item.HeadPhoneJack, item.Headphones, item.Manual,
+                    item.SDCardReader, item.Price, item.ColorDisplay, item.ColorType, item.PlayGames);
+            } // end method for each
+        } // end method my second list
     } // end class
 } // end namespace

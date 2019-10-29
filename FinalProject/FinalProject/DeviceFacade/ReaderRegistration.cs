@@ -1,5 +1,4 @@
 ﻿using FinalProject.BaseFiles;
-using FinalProject.SingletonDevice;
 using System;
 using System.Collections.Generic;
 using System.Text;
